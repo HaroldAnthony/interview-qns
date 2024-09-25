@@ -18,10 +18,19 @@
 
 //IMMEDIATE INVOKE
 
-let f = function(a,b){
+// let f = function(a,b){
+//     const sum = a+b;
+//     return sum;
+// }(2,3)
+
+// console.log(f);
+
+//ARROW FN
+
+let f = (a,b) => {
     const sum = a+b;
     return sum;
-}(2,3)
+}
 
-console.log(f);
+console.log(f(2,3));
 
