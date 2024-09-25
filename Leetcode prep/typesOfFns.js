@@ -27,10 +27,23 @@
 
 //ARROW FN
 
-let f = (a,b) => {
-    const sum = a+b;
-    return sum;
+// let f = (a,b) => {
+//     const sum = a+b;
+//     return sum;
+// }
+
+// console.log(f(2,3));
+
+//function within a function
+
+function fun(){
+    function f(a,b){
+        const sum = a+b;
+        return sum;
+    }
+    return f;
 }
 
-console.log(f(2,3));
+var numsum = fun();
+console.log(numsum(2,3));
 
